@@ -11,14 +11,14 @@ import (
 )
 
 const (
-	version = "v2.0.0"
+	version = "v3.0.0"
 )
 
 func main() {
 	log.Println("Starting Hello-World App...")
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello Red Hat Accelerators!\n")
+		fmt.Fprintf(w, "Bonjour Red Hat Accelerators!\n")
 	})
 
 	http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
